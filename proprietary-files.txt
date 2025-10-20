@@ -1,9 +1,5 @@
 ## X6882 package version: X6882-H8915ABCDFGHIJLMNOPRVWX-U-OP-260117V1572, unless stated otherwise
 
-# AEE
-vendor/lib/libaedv.so
-vendor/lib64/libaedv.so
-
 # APU
 vendor/etc/vintf/manifest/manifest_apuware_apusys.xml
 vendor/etc/vintf/manifest/manifest_apuware_hmp.xml
