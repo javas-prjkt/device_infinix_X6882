@@ -24,6 +24,7 @@ namespace_imports = [
     'hardware/mediatek',
     'hardware/mediatek/libmtkperf_client',
     'hardware/transsion',
+    'hardware/mediatek/libaedv',
 ]
 
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
