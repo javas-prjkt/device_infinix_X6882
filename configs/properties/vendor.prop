@@ -136,6 +136,8 @@ ro.lmk.kill_timeout_ms=50
 ro.lmk.stall_limit_critical=55
 
 # Media
+media.c2.hal.selection=aidl
+debug.mediatek.disp_decompress=1
 debug.stagefright.c2inputsurface=-1
 media.c2.dmabuf.padding=3072
 media.stagefright.thumbnail.prefer_hw_codecs=true
