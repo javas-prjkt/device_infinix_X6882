@@ -507,6 +507,8 @@ PRODUCT_PACKAGES += \
     libkeystore-wifi-hidl:64 \
     libkeystore-engine-wifi-hidl:64
 
+$(call soong_config_set_bool,wpa_supplicant_8,wifi_disable_multi_akm,true)
+
 PRODUCT_PACKAGES += \
     NcmTetheringOverlay
 
