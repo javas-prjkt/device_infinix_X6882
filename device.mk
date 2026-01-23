@@ -465,6 +465,9 @@ $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 PRODUCT_PACKAGES += \
     vndservicemanager
 
+# Userdata
+PRODUCT_FS_COMPRESSION := 1
+
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.mediatek
