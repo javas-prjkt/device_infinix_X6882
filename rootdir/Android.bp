@@ -106,3 +106,16 @@ sh_binary {
     src: "bin/init.insmod.sh",
     vendor: true
 }
+
+prebuilt_etc {
+    name: "init.thermal_core.rc",
+    src: "etc/init/init.thermal_core.rc",
+    relative_install_path: "init",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.thermal_core_wrapper.sh",
+    src: "etc/init/hw/init.thermal_core_wrapper.sh",
+    vendor: true,
+}

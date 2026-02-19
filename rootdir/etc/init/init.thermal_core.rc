@@ -1,0 +1,10 @@
+service thermal_core /vendor/bin/sh /vendor/etc/init.thermal_core_wrapper.sh
+    override
+    class main
+    user root
+    group system radio
+    disabled
+    oneshot
+
+on property:ro.vendor.mtk_thermal_2_0=1
+    start thermal_core
