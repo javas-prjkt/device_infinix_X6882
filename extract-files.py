@@ -26,8 +26,16 @@ namespace_imports = [
     'hardware/transsion',
 ]
 
+def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
+    return f'{lib}_{partition}' if partition == 'vendor' else None
+
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
+    (
+        'libtflite_mtk',
+        'libneuron_graph_delegate.mtk',
+        'vendor.mediatek.hardware.videotelephony@1.0'
+    ): lib_fixup_vendor_suffix,
 }
 
 blob_fixups: blob_fixups_user_type = {
