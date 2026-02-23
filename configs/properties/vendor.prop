@@ -117,7 +117,21 @@ debug.sf.enable_adpf_cpu_hint=true
 
 # HWComposer
 ro.vendor.mtk_backlight_hwc_support=0
-ro.vendor.composer_version=2.3  
+ro.vendor.composer_version=2.3
+
+# IMS
+persist.vendor.mdrsra_v2_support=1
+persist.vendor.ims_support=1
+persist.vendor.mtk.volte.enable=1
+persist.vendor.mtk_ct_volte_support=3
+persist.vendor.mtk_dynamic_ims_switch=1
+persist.vendor.mtk_wfc_support=1
+persist.vendor.vilte_support=1
+persist.vendor.viwifi_support=1
+persist.vendor.volte_support=1
+persist.vendor.vonr_setting_support=1
+ro.vendor.md_auto_setup_ims=1
+ro.vendor.mtk_data_config=1
 
 # Keymaster
 ro.vendor.keymaster_version=5.0
