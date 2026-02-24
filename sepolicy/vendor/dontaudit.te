@@ -1,3 +1,13 @@
-dontaudit {
-  hal_camera_default
-} default_prop:file r_file_perms;
+# default_prop
+dontaudit hal_camera_default default_prop:file r_file_perms;
+dontaudit hal_fingerprint_default default_prop:file r_file_perms;
+
+# sysfs_therm
+dontaudit platform_app sysfs_therm:dir search;
+dontaudit platform_app sysfs_therm:file r_file_perms;
+
+# metadata_file
+dontaudit priv_app metadata_file:dir { read open getattr };
+
+# unlabeled
+dontaudit untrusted_app unlabeled:filesystem getattr;
