@@ -116,6 +116,6 @@ prebuilt_etc {
 
 sh_binary {
     name: "init.thermal_core_wrapper.sh",
-    src: "etc/init/hw/init.thermal_core_wrapper.sh",
+    src: "bin/init.thermal_core_wrapper.sh",
     vendor: true,
 }
