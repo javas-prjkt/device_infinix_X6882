@@ -1,4 +1,4 @@
-service thermal_core /vendor/bin/sh /vendor/etc/init.thermal_core_wrapper.sh
+service thermal_core /vendor/bin/sh /vendor/bin/init.thermal_core_wrapper.sh
     override
     class main
     user root
