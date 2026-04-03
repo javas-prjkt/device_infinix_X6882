@@ -131,6 +131,9 @@ ro.lmk.use_psi=true
 ro.lmk.use_minfree_levels=false
 ro.lmk.thrashing_limit_decay=50
 ro.lmk.downgrade_pressure=30
+ro.lmk.filecache_min_kb=128000
+ro.lmk.kill_timeout_ms=50
+ro.lmk.stall_limit_critical=55
 
 # Media
 debug.stagefright.c2inputsurface=-1
