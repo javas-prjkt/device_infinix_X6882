@@ -28,8 +28,6 @@ persist.dbg.wfc_avail_ovr=1
 log.tag=I
 
 # Media
-debug.stagefright.c2inputsurface=-1
-media.stagefright.thumbnail.prefer_hw_codecs=true
 vendor.mtk_thumbnail_optimization=true
 
 # Mediatek
@@ -40,6 +38,3 @@ ro.vendor.mtk_telephony_add_on_policy=0
 # Netflix
 ro.netflix.channel=004ee050-1a17-11e9-bb61-6f1da27fb55b
 ro.netflix.signup=1
-
-# Storage
-persist.sys.fuse.passthrough.enable=true
