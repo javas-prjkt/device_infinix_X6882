@@ -129,7 +129,7 @@ persist.vendor.mtk_wfc_support=1
 persist.vendor.vilte_support=1
 persist.vendor.viwifi_support=1
 persist.vendor.volte_support=1
-persist.vendor.vonr_setting_support=0
+persist.vendor.vonr_setting_support=1
 ro.vendor.md_auto_setup_ims=1
 ro.vendor.mtk_data_config=1
 
@@ -145,9 +145,6 @@ ro.lmk.use_psi=true
 ro.lmk.use_minfree_levels=false
 ro.lmk.thrashing_limit_decay=50
 ro.lmk.downgrade_pressure=30
-ro.lmk.filecache_min_kb=128000
-ro.lmk.kill_timeout_ms=50
-ro.lmk.stall_limit_critical=55
 
 # Media
 media.c2.hal.selection=aidl
@@ -220,121 +217,6 @@ ro.vendor.pq.mtk_scltm_support=0
 ro.vendor.pq.mtk_ultra_dimming_support=0
 ro.vendor.pq.mtk_ultra_resolution_support=0
 ro.vendor.pq.mtk_video_transition=0
-ro.vendor.smvr.p2batch.hd=4
-ro.vendor.smvr.p2batch.vga=8
-
-# Enable virtual A/B compression
-ro.virtual_ab.compression.threads=true
-
-# FUSE passthrough
-persist.sys.fuse.passthrough.enable=true
-
-# Gatekeeper
-ro.hardware.gatekeeper=trustonic
-
-# GNSS
-ro.vendor.gps.chrdev=gps_drv_stp
-ro.vendor.mtk_agps_app=1
-ro.vendor.mtk_gps_support=1
-ro.vendor.mtk_log_hide_gps=1
-
-# HWUI
-debug.hwui.target_cpu_time_percent=30
-debug.hwui.use_hint_manager=true
-
-# IncrementalFS
-ro.incremental.enable=yes
-
-# IMS
-persist.vendor.mdrsra_v2_support=1
-persist.vendor.ims_support=1
-persist.vendor.mtk.volte.enable=1
-persist.vendor.mtk_ct_volte_support=3
-persist.vendor.mtk_dynamic_ims_switch=1
-persist.vendor.mtk_wfc_support=1
-persist.vendor.vilte_support=1
-persist.vendor.viwifi_support=1
-persist.vendor.volte_support=1
-persist.vendor.vonr_setting_support=0
-ro.vendor.md_auto_setup_ims=1
-ro.vendor.mtk_data_config=1
-
-# IncrementalFS
-ro.incremental.enable=yes
-
-# Keymaster
-ro.crypto.volume.filenames_mode=aes-256-cts
-ro.hardware.kmsetkey=trustonic
-
-# Lights
-ro.vendor.transsion.backlight_12bit=1
-
-# LMK
-ro.lmk.debug=false
-ro.lmk.kill_heaviest_task=true
-ro.lmk.kill_timeout_ms=100
-ro.lmk.psi_complete_stall_ms=150
-ro.lmk.swap_free_low_percentage=20
-ro.lmk.swap_util_max=90
-ro.lmk.thrashing_limit=25
-ro.lmk.thrashing_limit_decay=50
-
-# Media
-media.c2.hal.selection=aidl
-debug.mediatek.disp_decompress=1
-debug.stagefright.c2inputsurface=-1
-media.c2.dmabuf.padding=3072
-ro.vendor.jpeg_decode_sw_opt=1
-ro.vendor.mtk_config_max_dram_size=0x800000000
-ro.vendor.mtk_sec_video_path_support=1
-ro.vendor.mtk_video_hevc_enc_support=1
-vendor.media.omx=0
-vendor.mtk.vdec.waitkeyframeforplay=9
-
-# MediaTek
-ro.soc.manufacturer=Mediatek
-ro.vendor.mediatek.platform=MT6789
-ro.vendor.mediatek.version.branch=alps-mp-s0.mp1
-ro.vendor.mediatek.version.release=alps-mp-s0.mp1.rc-V15.240_reallytek.s0mp1rc.k61v1.64.bsp_P47
-ro.vendor.mgk_name=mgk_64_entry_level_k510
-ro.vendor.mtk_prefer_64bit_proc=0
-ro.vendor.mtk_widevine_drm_l1_support=1
-
-# Misc
-ro.vendor.pref_scale_enable_cfg=1
-ro.vendor.rc=/vendor/etc/init/hw/
-
-# MTE
-persist.arm64.memtag.system_server=off
-
-# MTK Stuff
-persist.vendor.factory.GB2312=no
-ro.netflix.bsp_rev=MTK6789-35965-1
-ro.vendor.efuse_writer_enable=1
-ro.vendor.mml.mtk_mml_support=0
-ro.vendor.mtk_aal_support=1
-ro.vendor.mtk_fast_charging_support=1
-ro.vendor.mtk_gwsd_capability=1
-ro.vendor.mtk_mvpu_security_support=0
-ro.vendor.mtk_ovl_bringup=0
-ro.vendor.mtk_wfd_support=1
-
-# Neural Networks
-debug.mtk_tflite.target_nnapi=29
-ro.vendor.mtk_nn.option=A,B,C,D,E,F,G,Z
-ro.vendor.mtk_nn_baseline_support=1
-ro.vendor.mtk_nn_quant_preferred=1
-ro.vendor.mtk_nn_support=1
-
-# Power
-persist.vendor.iomanager.dirty=1
-persist.vendor.iomanager.switch=1
-persist.vendor.pnpmgr.enable=1
-persist.vendor.pnpmgr.gamemode.enable=1
-persist.vendor.pnpmgr.gamerecord.enable=1
-ro.vendor.powerhal.gsi_watermark=500
-ro.vendor.powerhal_fling_mode_support=1
-vendor.perf.framepacing.enable=1
 
 # Radio
 persist.radio.multisim.config=dsds
@@ -359,6 +241,7 @@ persist.vendor.radio.smart.data.switch=1
 persist.vendor.vilte_support=1
 persist.vendor.viwifi_support=1
 persist.vendor.volte_support=1
+persist.vendor.vonr_setting_support=1
 persist.vendor.xfrm_support=1
 ro.telephony.default_network=9,9,9,9
 ro.telephony.iwlan_operation_mode=AP-assisted
