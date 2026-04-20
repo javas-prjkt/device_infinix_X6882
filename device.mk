@@ -154,6 +154,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ANGLE
 
+# Dolby
+$(call inherit-product, vendor/sony/dolby/setup.mk)
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
@@ -236,6 +239,9 @@ $(call inherit-product, vendor/mediatek/ims/ims.mk)
 
 # Include GSI keys
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
+
+# JamesDSP
+$(call inherit-product-if-exists, vendor/JamesDSP/config.mk)
 
 # Key
 -include vendor/lineage-priv/keys/keys.mk
@@ -458,9 +464,6 @@ PRODUCT_PACKAGES += \
     android.hardware.usb-service.mediatek \
     android.hardware.usb.gadget-service.mediatek
 
-# ViPER4Android
-$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
-    
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
