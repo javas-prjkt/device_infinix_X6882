@@ -285,7 +285,7 @@ on post-fs-data
     chown media system /dev/video0
     chmod 0660 /dev/video1
     chown media system /dev/video1
-    mkdir /data/vendor/vcodec 0777 media system
+    mkdir /data/vendor/vcodec 0770 media system
     mkdir /data/vendor/vcodec/log 0770 media system
     mkdir /data/vendor/vcodec/in 0770 media system
     mkdir /data/vendor/vcodec/out 0770 media system
@@ -486,22 +486,22 @@ on post-fs-data
     #OIS
     chown system camera /dev/dw9781_ois 
     #DualCam
-    mkdir /data/vendor/arcsoft 0777 system system
+    mkdir /data/vendor/arcsoft 0770 system system
     #tranDualCam
-    mkdir /data/vendor/multicam  0777 system system
-    mkdir /data/vendor/multicam/dualcam  0777 system system
+    mkdir /data/vendor/multicam  0770 system system
+    mkdir /data/vendor/multicam/dualcam  0770 system system
     #tranSAT
-    mkdir /data/vendor/multicam/sat 0777 system system
+    mkdir /data/vendor/multicam/sat 0770 system system
 #ITD: Modify Camera By Yingji.Wang 220426 end
 
 #ITD:modify by camera driver junfeng.qin5 20220501 start
     #MEG-fullHDR
-    mkdir /data/vendor/meg_working_dir 0777 system system
-    mkdir /data/vendor/meg_working_dir/anc_fullhdr 0777 system system
+    mkdir /data/vendor/meg_working_dir 0770 system system
+    mkdir /data/vendor/meg_working_dir/anc_fullhdr 0770 system system
     #MEG-HUMANEFFECT
-    mkdir /data/vendor/meghumaneffect 0777 system system
+    mkdir /data/vendor/meghumaneffect 0770 system system
     #watermark 2.0
-    mkdir /data/vendor/camera_watermark 0777 system system
+    mkdir /data/vendor/camera_watermark 0770 system system
 #ITD:modify by camera driver junfeng.qin5 20220501 end
 
     chown system camera /dev/camera-sysram
