@@ -56,7 +56,6 @@ genfscon sysfs /devices/platform/soc/11015000.i2c/i2c-3/3-0028/wakeup u:object_r
 genfscon sysfs /devices/platform/soc/1101a000.i2c/i2c-6/6-004e/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/1101a000.i2c/i2c-6/6-006b/power_supply/charger/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/11eb3000.i2c/i2c-9/9-0054/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/15020000.imgsys_config/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/18002000.consys/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/1f000000.mdp/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/trusty/wakeup u:object_r:sysfs_wakeup:s0
@@ -87,4 +86,3 @@ genfscon proc /game_state              u:object_r:proc_game_state:s0
 
 # aw87xxx vmax
 genfscon sysfs /devices/platform/1101a000.i2c7/i2c-7/7-0058/vmax u:object_r:aw87xxx_vmax:s0
-
