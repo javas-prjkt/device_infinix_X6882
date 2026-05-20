@@ -49,7 +49,7 @@
 /dev/tms_ese                                                                                u:object_r:nfc_device:s0
 
 # OMX
-/vendor/etc/mtk_omx_core\.cfg  u:object_r:vendor_mtk_omx_core_prop:s0
+/vendor/etc/mtk_omx_core\.cfg  u:object_r:vendor_configs_file:s0
 
 # Power
 /vendor/bin/hw/android\.hardware\.power-service\.pixel-libperfmgr                      u:object_r:hal_power_default_exec:s0

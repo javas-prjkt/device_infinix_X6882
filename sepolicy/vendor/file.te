@@ -32,9 +32,6 @@ type proc_gesture_state, fs_type, proc_type, sysfs_type;
 type sysfs_OTG_STATE_file, fs_type, sysfs_type;
 type sysfs_OTG_CTL_file, fs_type, sysfs_type;
 
-# OMX
-type vendor_mtk_omx_core_prop, file_type, vendor_file_type;
-
 # Power
 type sysfs_aichg_file, fs_type, sysfs_type;
 
@@ -57,4 +54,7 @@ type vendor_sysfs_kgsl, fs_type, sysfs_type;
 type vendor_sysfs_kgsl_gpuclk, fs_type, sysfs_type;
 type vendor_sysfs_battery_supply, fs_type, sysfs_type;
 type vendor_sysfs_usb_supply, fs_type, sysfs_type;
+
+# OMX
+type vendor_mtk_omx_core_file, file_type, vendor_file_type;
 
