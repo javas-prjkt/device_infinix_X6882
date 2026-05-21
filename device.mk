@@ -156,7 +156,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@4.0.vendor \
     libion.vendor \
     libui.vendor \
-    libdrm.vendor 
+    libdrm.vendor
 
 PRODUCT_PACKAGES += \
     ANGLE
@@ -197,7 +197,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss-V1-ndk.vendor
 
 PRODUCT_PACKAGES += \
-    libcurl.vendor 
+    libcurl.vendor
 
 # Health
 PRODUCT_PACKAGES += \
@@ -279,7 +279,7 @@ PRODUCT_PACKAGES += \
 # Linker config
 PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
     $(LOCAL_PATH)/configs/linker.config.json
-    
+
 # Media
 $(call soong_config_set_bool,android_hardware_mediatek_codec2,link_v33_libstagefright_foundation,true)
 PRODUCT_PACKAGES += \
