@@ -230,8 +230,6 @@ PRODUCT_PACKAGES += \
     init.project.rc \
     init.recovery.usb.rc \
     init.sensor_2_0.rc \
-    init.thermal_core.rc \
-    init.thermal_core_wrapper.sh \
     ueventd.mt6789.rc
 
 # Inherit common MediaTek IMS
