@@ -39,6 +39,7 @@ BOARD_USES_ALSA_AUDIO := true
 
 # ART
 WITH_DEXPREOPT := true
+DONT_DEXPREOPT_PREBUILTS := true
 DEX_PREOPT_DEFAULT := generate-vdex-and-image
 WITH_DEXPREOPT_DEBUG_INFO := false
 
