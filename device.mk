@@ -464,7 +464,10 @@ PRODUCT_PACKAGES += \
 
 # ViPER4Android
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
-    
+
+# Vendor Logtag
+$(call inherit-product, hardware/mediatek/configs/properties/vendor_logtag.mk)
+
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
