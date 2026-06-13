@@ -270,12 +270,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.transsion
 
-# Lineage-Specific Overlays
-PRODUCT_PACKAGES += \
-	LineageApertureOverlayTarget \
-    LineageDialerOverlayTarget \
-    LineageSettingsOverlayTarget
-
 # Linker config
 PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
     $(LOCAL_PATH)/configs/linker.config.json
