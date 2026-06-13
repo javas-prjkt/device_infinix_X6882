@@ -116,6 +116,10 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.bluetooth.audio@2.1.vendor:64 \
     vendor.mediatek.hardware.bluetooth.audio@2.2.vendor:64
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2460
+TARGET_SCREEN_WIDTH := 1080
+
 # Boot control HAL
 PRODUCT_PACKAGES += \
     com.android.hardware.boot \
