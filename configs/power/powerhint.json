@@ -20,7 +20,7 @@
     },
     {
       "Name": "GpuPwrLevel",
-      "Path": "/sys/kernel/ged/hal/custom_boost_gpu_freq",
+      "Path": "/sys/kernel/ged/hal/custom_upbound_gpu_freq",
       "Values": [
         "37",
         "36",
