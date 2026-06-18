@@ -1,4 +1,4 @@
-## X6882 package version: X6882-H8915ABCDEFGHIJKLMNOPQRVWX-U-BASE-260116V1721, unless stated otherwise
+## X6882 package version: X6882-H8915ABCDFGHIJLMNOPRVWX-U-OP-260117V1572, unless stated otherwise
 
 # AEE
 vendor/lib/libaedv.so

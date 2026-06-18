@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from X6882-H8915ABCDFGHIJLMNOPRVWX-U-BASE-260116V1721
+## from X6882-H8915ABCDFGHIJLMNOPRVWX-U-OP-260117V1572
 
 dpm.img;AB
 gz.img;AB
