@@ -109,6 +109,11 @@
             <apply effect="dap"/>
         </stream>
     </postprocess>
+
+    <!--  Transsion or Three-way Effect stream START -->
+    <!-- DOLBY ADD STREAM: don't remove it -->
+    <!--  Transsion or Three-way Effect stream END -->
+
     <!-- Audio pre processor configurations.
          The pre processor configuration is described in a "preprocess" element and consists in a
          list of elements each describing pre processor settings for a given use case or "stream".
