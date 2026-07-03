@@ -3,8 +3,8 @@
 
 dpm.img;AB
 gz.img;AB
-lk.img;AB
 logo.bin:logo.img;AB
+lk.img;AB|3c30f5c5ad340a9e5f06cf659903f30160d82e80
 mcupm.img;AB
 md1img.img;AB
 pi_img.img;AB
