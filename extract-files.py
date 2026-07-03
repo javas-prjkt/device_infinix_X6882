@@ -23,7 +23,6 @@ namespace_imports = [
     'device/infinix/X6882',
     'hardware/mediatek',
     'hardware/mediatek/libmtkperf_client',
-    'hardware/transsion',
     'hardware/mediatek/libaedv',
 ]
 
