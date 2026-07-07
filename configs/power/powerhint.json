@@ -503,7 +503,7 @@
     {
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "CPUSuperClusterMinFreq",
-      "Duration": 0,
+      "Duration": 1000,
       "Value": "2000000"
     },
     {
