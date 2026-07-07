@@ -57,3 +57,11 @@ ro.netflix.signup=1
 
 # Storage
 persist.sys.fuse.passthrough.enable=true
+
+# Thermal Management
+persist.thermal_config.mitigation=1
+ro.mtk_thermal_monitor.enabled=true
+
+# Thermal Configuration
+ro.config.thermal_dcs=40
+ro.config.thermal_limit=75
