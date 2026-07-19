@@ -397,14 +397,4 @@
         </interface>
         <fqname>@1.0::ITui/default</fqname>
     </hal>
-    <hal format="hidl">
-        <name>vendor.tms.tmsnfc</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ITmsNfc</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ITmsNfc/default</fqname>
-    </hal>
 </manifest>
