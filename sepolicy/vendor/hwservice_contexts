@@ -10,9 +10,6 @@ vendor.mediatek.hardware.biometrics.fingerprint::ITranBiometricsFingerprint     
 vendor.fpsensor.hardware.fpsensorhidlsvc::IFpsensorHidlSvc                          u:object_r:fp_ext_svc2_service:s0
 vendor.silead.hardware.fingerprintext::ISileadFingerprint                                u:object_r:hal_fingerprint_hwservice:s0
 
-# NFC
-vendor.tms.tmsnfc::ITmsNfc                                                           u:object_r:vendor_tmsnfc_hwservice:s0
-
 # NXP NFC
 vendor.nxp.nxpnfc::INxpNfc                                                               u:object_r:nxpnfc_hwservice:s0
 vendor.nxp.nxpnfclegacy::INxpNfcLegacy                                                   u:object_r:nxpnfc_hwservice:s0
