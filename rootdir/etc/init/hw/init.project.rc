@@ -91,14 +91,5 @@ service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.nxp
     disabled
     override
 
-service nfc_hal_service.tms.aidl /vendor/bin/hw/android.hardware.nfc-service-tms
-    class hal
-    user nfc
-    group nfc
-    disabled
-
 on early-init
    enable vendor.nfc_hal_service
-
-on post-fs
-   start nfc_hal_service.tms.aidl
