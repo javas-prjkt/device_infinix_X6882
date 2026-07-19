@@ -34,11 +34,6 @@ persist.vendor.camera3.pipeline.bufnum.min.high_ram.imgo=7
 persist.vendor.camera3.pipeline.bufnum.min.high_ram.lcso=7
 persist.vendor.camera3.pipeline.bufnum.min.high_ram.rrzo=7
 persist.vendor.camera3.pipeline.bufnum.min.high_ram.rsso=7
-persist.vendor.camera3.pipeline.bufnum.min.low_ram.fdyuv=5
-persist.vendor.camera3.pipeline.bufnum.min.low_ram.imgo=6
-persist.vendor.camera3.pipeline.bufnum.min.low_ram.lcso=6
-persist.vendor.camera3.pipeline.bufnum.min.low_ram.rrzo=6
-persist.vendor.camera3.pipeline.bufnum.min.low_ram.rsso=6
 ro.vendor.camera3.zsl.default=260
 ro.vendor.camera_tran_fake_stereo_support=1
 ro.vendor.camera_tran_hal_server_support=1
@@ -157,11 +152,16 @@ ro.vendor.keymaster_version=5.0
 ro.vendor.transsion.backlight_12bit=1
 
 # LMKD
-ro.lmk.kill_heaviest_task=true
+ro.lmk.kill_heaviest_task=false
 ro.lmk.use_psi=true
 ro.lmk.use_minfree_levels=false
-ro.lmk.thrashing_limit_decay=50
-ro.lmk.downgrade_pressure=30
+ro.lmk.reorder_apps=true
+ro.lmk.kill_timeout_ms=500
+ro.lmk.thrashing_limit=40
+ro.lmk.thrashing_limit_decay=30
+ro.lmk.downgrade_pressure=25
+ro.lmk.upgrade_pressure=80
+ro.lmk.swap_free_low_percentage=15
 
 # Media
 media.c2.hal.selection=aidl
