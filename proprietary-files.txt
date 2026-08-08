@@ -1670,7 +1670,6 @@ vendor/etc/libnfc-nxp.conf
 vendor/etc/libnfc-slm_567.conf
 vendor/etc/SEC_THN31_FW_VTP.txt.bin
 vendor/lib64/libpn557_fw.so
-vendor/lib64/nfc_nci_nxp_snxxx.so
 vendor/libnfc-nxp_RF.conf:vendor/etc/libnfc-nxp_RF.conf
 
 # Neural Networks
