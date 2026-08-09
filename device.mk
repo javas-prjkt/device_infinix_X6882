@@ -158,7 +158,7 @@ PRODUCT_PACKAGES += \
     ANGLE
 
 # Dolby
-$(call inherit-product, vendor/sony/dolby/setup.mk)
+$(call inherit-product, hardware/dolby/dolby.mk)
 
 # DRM
 PRODUCT_PACKAGES += \
