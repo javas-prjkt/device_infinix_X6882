@@ -58,8 +58,6 @@ blob_fixups: blob_fixups_user_type = {
     (
         'vendor/lib64/hw/sensors.mediatek.V2.0.so',
         'vendor/lib64/libcodec2_mtk_c2store.so',
-        'vendor/lib64/libcodec2_mtk_vdec.so',
-        'vendor/lib64/libcodec2_mtk_venc.so',
         'vendor/lib64/libcodec2_vpp_qt_plugin.so',
         'vendor/lib64/libcodec2_vpp_rs_plugin.so'
     ): blob_fixup()
