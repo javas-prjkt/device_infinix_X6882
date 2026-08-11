@@ -1,3 +1,13 @@
+# Audio
+persist.vendor.anr.dumpthr=1
+ro.audio.silent=0
+ro.audio.usb.period_us=16000
+ro.camera.sound.forced=0
+ro.config.alarm_vol_default=13
+ro.config.media_vol_default=13
+ro.config.system_vol_default=15
+ro.config.vc_call_vol_steps=9
+
 # Blur
 ro.sf.blurs_are_expensive=1
 ro.surface_flinger.supports_background_blur=1
@@ -39,6 +49,9 @@ ro.vendor.mtk_telephony_add_on_policy=0
 ro.netflix.channel=004ee050-1a17-11e9-bb61-6f1da27fb55b
 ro.netflix.signup=1
 
+# Performance
+security.perf_harden=1
+
 # Storage
 persist.sys.fuse.passthrough.enable=true
 
@@ -49,3 +62,10 @@ ro.mtk_thermal_monitor.enabled=true
 # Thermal Configuration
 ro.config.thermal_dcs=40
 ro.config.thermal_limit=75
+
+# USB
+ro.sys.usb.bicr=no
+ro.sys.usb.charging.only=yes
+ro.sys.usb.mtp.whql.enable=0
+ro.sys.usb.storage.type=mtp
+ro.usb.connect.keycodes=100,200
