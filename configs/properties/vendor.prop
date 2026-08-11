@@ -77,7 +77,6 @@ persist.sys.fuse.passthrough.enable=true
 # Gatekeeper
 ro.hardware.gatekeeper=trustonic
 
-
 # Graphics
 debug.graphics.game_default_frame_rate.disabled=true
 debug.mediatek.appgamepq_compress=1
@@ -149,18 +148,6 @@ ro.vendor.keymaster_version=5.0
 
 # Light
 ro.vendor.transsion.backlight_12bit=1
-
-# LMKD
-ro.lmk.kill_heaviest_task=false
-ro.lmk.use_psi=true
-ro.lmk.use_minfree_levels=false
-ro.lmk.reorder_apps=true
-ro.lmk.kill_timeout_ms=500
-ro.lmk.thrashing_limit=40
-ro.lmk.thrashing_limit_decay=30
-ro.lmk.downgrade_pressure=25
-ro.lmk.upgrade_pressure=80
-ro.lmk.swap_free_low_percentage=15
 
 # Media
 media.c2.hal.selection=aidl
