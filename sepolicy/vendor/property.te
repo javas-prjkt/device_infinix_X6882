@@ -2,5 +2,8 @@
 vendor_public_prop(vendor_audioserver_prop)
 vendor_restricted_prop(vendor_audio_prop)
 
+# Camera
+type vendor_persist_camera_prop, vendor_property_type, property_type;
+
 # Silead
 vendor_internal_prop(vendor_silead_fp_prop)
