@@ -48,7 +48,7 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libutils.so', 'libutils-v32.so')
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so')
         .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
-    ('vendor/bin/mnld', 'vendor/lib64/mt6789/libaalservice.so', 'vendor/lib64/mt6789/libcam.utils.sensorprovider.so'): blob_fixup()
+    ('vendor/lib64/mt6789/libaalservice.so', 'vendor/lib64/mt6789/libcam.utils.sensorprovider.so'): blob_fixup()
         .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
     'vendor/lib64/hw/audio.primary.mediatek.so': blob_fixup()
         .binary_regex_replace(b'A2dpsuspendonly', b'A2dpSuspended\x00\x00')
@@ -123,7 +123,8 @@ blob_fixups: blob_fixups_user_type = {
      ('vendor/lib64/libcodec2_mtk_venc.so', 'vendor/lib64/libcodec2_mtk_vdec.so'): blob_fixup()
         .replace_needed('libformatter.so', 'libformatter_mtk.so'),
      ('vendor/bin/mnld', 'vendor/lib64/libwpfa.so'): blob_fixup()
-        .replace_needed('libmnl.so', 'libmnl_mtk.so'),
+        .replace_needed('libmnl.so', 'libmnl_mtk.so')
+        .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
