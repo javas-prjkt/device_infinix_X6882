@@ -3,41 +3,30 @@ import /vendor/etc/init/hw/init.mtkgki.rc
 # MTK project .rc configure
 
 on init
+    mkdir /mnt/media_rw/usbotg 0700 media_rw media_rw
+    mkdir /storage/usbotg 0700 root root
+    write /sys/kernel/tracing/buffer_size_kb 10240
+    write /sys/kernel/tracing/events/enable 0
+    write /sys/kernel/tracing/options/trace_printk 0
+    write /sys/kernel/tracing/events/ufs/ufshcd_command/enable 1
+    write /sys/kernel/tracing/events/ufs/ufshcd_upiu/enable 1
+    write /sys/kernel/tracing/events/ufs/ufshcd_uic_command/enable 1
+    write /sys/kernel/tracing/events/ufs/ufshcd_clk_gating/enable 1
+    write /sys/kernel/tracing/events/block/block_rq_issue/enable 1
+    write /sys/kernel/tracing/events/block/block_rq_complete/enable 1
+    write /sys/kernel/tracing/tracing_on 1
+
     # Set gesture touch permissions
     chown system system /proc/gesture_function
     chmod 0660 /proc/gesture_function
 
-    # OTG
-    write /sys/devices/platform/odm/odm:tran_battery/OTG_CTL 1
-
 on post-fs-data
+
+#Camera
     chmod 0660 /dev/MAINAF
     chown system camera /dev/MAINAF
 
-    chmod 0660 /dev/MAINAF2
-    chown system camera /dev/MAINAF2
-
-    chmod 0660 /dev/SUBAF
-    chown system camera /dev/SUBAF
-
-    chmod 0660 /dev/GAF001AF
-    chown system camera /dev/GAF001AF
-
-    chmod 0660 /dev/DW9714AF
-    chown system camera /dev/DW9714AF
-
-    chmod 0660 /dev/LC898212AF
-    chown system camera /dev/LC898212AF
-
-    chmod 0660 /dev/BU64745GWZAF
-    chown system camera /dev/BU64745GWZAF
-
-    chown system system /proc/smb/ScreenComm
-    chmod 0660 /proc/smb/ScreenComm
-
-    chmod 0660 /dev/spm
-    chown system system /dev/spm
-
+    # BSP:modify for LRA XLWYEHLYEL-1 by hongwu.zhan 20221104 start
     chown system system /sys/class/leds/vibrator_single/activate
     chown system system /sys/class/leds/vibrator_single/activate_mode
     chown system system /sys/class/leds/vibrator_single/awrw
@@ -74,17 +63,12 @@ on post-fs-data
     chown system system /sys/class/leds/vibrator_single/trigger
     chown system system /sys/class/leds/vibrator_single/uevent
     chown system system /sys/class/leds/vibrator_single/vbat_monitor
+    # BSP:modify for LRA XLWYEHLYEL-1 by hongwu.zhan 20221104 end
 
-on boot
-    # Stop Serial Console
-    stop console
+    #SDD:add OTG feature for TESSCR-6368 by weike.xu 20210512 start
+    chmod 0666 /sys/devices/platform/odm/odm:tran_battery/OTG_CTL
+    #SDD:add OTG feature for TESSCR-6368 by weike.xu 20210512 end
 
-service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.nxp
-    class hal
-    user nfc
-    group nfc
-    disabled
-    override
-
-on early-init
-   enable vendor.nfc_hal_service
+# OTG
+on property:sys.boot_completed=1
+    write /sys/devices/platform/odm/odm:tran_battery/OTG_CTL 1
