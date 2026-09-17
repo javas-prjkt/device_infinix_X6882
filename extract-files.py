@@ -35,6 +35,10 @@ lib_fixups: lib_fixups_user_type = {
     (
         'libtflite_mtk',
         'libneuron_graph_delegate.mtk',
+        'vendor.mediatek.hardware.apuware.apusys@2.0',
+        'vendor.mediatek.hardware.apuware.apusys@2.1',
+        'vendor.mediatek.hardware.apuware.hmp@1.0',
+        'vendor.mediatek.hardware.apuware.utils@2.0',
         'vendor.mediatek.hardware.videotelephony@1.0'
     ): lib_fixup_vendor_suffix,
 }
