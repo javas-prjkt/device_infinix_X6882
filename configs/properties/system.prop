@@ -35,6 +35,9 @@ persist.dbg.wfc_avail_ovr=1
 # Logging
 log.tag=I
 
+# Low Memory Killer
+ro.config.per_app_memcg=false
+
 # Media
 debug.stagefright.c2inputsurface=-1
 media.stagefright.thumbnail.prefer_hw_codecs=true
