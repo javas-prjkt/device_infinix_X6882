@@ -3,8 +3,6 @@ import /vendor/etc/init/hw/init.mtkgki.rc
 # MTK project .rc configure
 
 on init
-    mkdir /mnt/media_rw/usbotg 0700 media_rw media_rw
-    mkdir /storage/usbotg 0700 root root
     write /sys/kernel/tracing/buffer_size_kb 10240
     write /sys/kernel/tracing/events/enable 0
     write /sys/kernel/tracing/options/trace_printk 0
