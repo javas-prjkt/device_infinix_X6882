@@ -1,3 +1,6 @@
+# Animation
+persist.sys.activity_anim_perf_override=true
+
 # RKPD
 remote_provisioning.enable_rkpd=true
 remote_provisioning.hostname=remoteprovisioning.googleapis.com

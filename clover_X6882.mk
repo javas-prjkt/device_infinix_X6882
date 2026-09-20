@@ -9,15 +9,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff.
-PERF_ANIM_OVERRIDE := true
+# PERF_ANIM_OVERRIDE := true
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/clover/config/common_full_phone.mk)
 
 # Inherit from X6882 device
 $(call inherit-product, device/infinix/X6882/device.mk)
 
 BOARD_VENDOR := Infinix
-PRODUCT_NAME := lineage_X6882
+PRODUCT_NAME := clover_X6882
 PRODUCT_DEVICE := X6882
 PRODUCT_MANUFACTURER := INFINIX
 PRODUCT_BRAND := Infinix
@@ -31,3 +31,7 @@ BUILD_FINGERPRINT := Infinix/X6882-OP/Infinix-X6882:14/UP1A.231005.007/260117V15
 # Time
 LINEAGE_VERSION_APPEND_TIME_OF_DAY := true
 
+CLOVER_MAINTAINER := Javas
+TARGET_ENABLE_BLUR := true
+WITH_GMS := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
