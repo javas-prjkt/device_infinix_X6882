@@ -70,9 +70,13 @@ debug.sf.region_sampling_duration_ns=8333333
 debug.sf.region_sampling_period_ns=99999984
 debug.sf.region_sampling_timer_timeout_ns=99999984
 debug.sf.treat_170m_as_sRGB=1
+ro.surface_flinger.has_HDR_display=false
+ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.game_default_frame_rate_override=120
 ro.surface_flinger.has_wide_color_display=true
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+ro.surface_flinger.primary_display_orientation=ORIENTATION_0
+ro.surface_flinger.protected_contents=true
 ro.surface_flinger.set_display_power_timer_ms=1000
 ro.surface_flinger.set_idle_timer_ms=4000
 ro.surface_flinger.set_touch_timer_ms=4000
@@ -178,9 +182,20 @@ ro.vendor.mtk_nn_baseline_support=1
 ro.vendor.mtk_nn_quant_preferred=1
 
 # Performance
+ro.vendor.pref_scale_enable_cfg=1
+persist.vendor.pnpmgr.enable=1
+persist.vendor.pnpmgr.gamemode.enable=1
+persist.vendor.pnpmgr.gamerecord.enable=1
 vendor.powerhal.interaction.max=150
 vendor.powerhal.interaction.min=50
 vendor.powerhal.interaction.offset=0
+
+# Platform
+ro.vendor.mediatek.platform=MT6789
+ro.vendor.mediatek.version.branch=alps-mp-s0.mp1
+ro.vendor.mediatek.version.release=alps-mp-s0.mp1.rc-V16.49_reallytek.s0mp1rc.k61v1.64.bsp_P31
+ro.vendor.mgk_name=mgk_64_entry_level_k510
+ro.vendor.mtk_prefer_64bit_proc=0
 
 # PQ
 debug.mediatek.appgamepq_compress=1
