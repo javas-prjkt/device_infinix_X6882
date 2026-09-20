@@ -246,7 +246,7 @@ $(call inherit-product, vendor/mediatek/ims/ims.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
 # Key
--include vendor/lineage-priv/keys/keys.mk
+-include vendor/private/keys/keys.mk
 
 # Keylayout
 PRODUCT_COPY_FILES += \
