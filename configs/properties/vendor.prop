@@ -292,8 +292,6 @@ ro.vendor.init.sensor.rc=init.sensor_2_0.rc
 ro.vendor.mtk.sensor.support=yes
 
 # Surfaceflinger
-debug.sf.latch_unsignaled=true
-debug.sf.auto_latch_unsignaled=false
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_gl_backpressure=0
 debug.sf.enable_hwc_vds=0
